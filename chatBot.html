@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Store Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Chat Button -->
+    <div id="chat-toggle" onclick="toggleChat()">💬</div>
+    
+    <!-- Chatbot -->
+    <div id="chat-widget" class="hidden">
+    
+      <div class="chat-header">
+        🛒 Store Bot
+        <span class="close-btn" onclick="closeChat()">✖</span>
+      </div>
+    
+      <div id="chat-box" class="chat-box"></div>
+    
+      <div class="quick-buttons">
+        <button onclick="quickMsg('hi')">Hi</button>
+        <button onclick="quickMsg('shoes')">Shoes</button>
+        <button onclick="quickMsg('tshirt')">T-Shirts</button>
+        <button onclick="quickMsg('track order')">Track</button>
+      </div>
+    
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Type a message..." />
+        <button onclick="sendMessage()">➤</button>
+      </div>
+    
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
